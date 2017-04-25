@@ -22,7 +22,7 @@ Implementation: (Vignettes contains detail information is available), quick impl
           
 3.	OPTIONAL: If the user has different annotation than this of KEGG database, correction should be applied. The user is free to prepare the correction file using any method. However, the file should be in a format of csv containing two columns without column or row names. The first column is the new IDs and the second column is KEGG IDS.
           
-         *for similarity, we prepared shell script to create such list, the user can apply protein sequence or DNA sequence of the new annotation in fasta file.
+* for similarity, we prepared shell script to create such list, the user can apply protein sequence or DNA sequence of the new annotation in fasta file.
 
 ./conversion.sh input_list input.fasta output_list.csv blast_type ratio similarity
 
@@ -31,12 +31,12 @@ Example:
 
           adu
           aip
-input.fasta: the file contains protein or DNA sequence of the new annotation.
-output_list.csv: the file specify by the user to hold the outputs.
-Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
-Note: BLAST+ should be available
-Ratio: the percentage of query sequence/alignment length
-Similarity: the percentage of similarity between the query and the hits
+          input.fasta: the file contains protein or DNA sequence of the new annotation.
+          output_list.csv: the file specify by the user to hold the outputs.
+          Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
+          Note: BLAST+ should be available
+          Ratio: the percentage of query sequence/alignment length
+          Similarity: the percentage of similarity between the query and the hits
 
           Example:
 
