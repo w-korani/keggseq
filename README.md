@@ -43,9 +43,9 @@ Note: BLAST+ should be available
 
 *. Similarity: the percentage of similarity between the query and the hits
 
-  Example:
+Example:
+./conversion.sh list input.fasta output_list.csv blastp 75 75
 
-                  ./conversion.sh list input.fasta output_list.csv blastp 75 75
 Example:
 
           c = corrected_datasets_ids(b,'output_list.csv')
