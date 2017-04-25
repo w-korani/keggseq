@@ -59,7 +59,7 @@ Example:
           e = kegg_summary(d)
 
 6.	Creating plots:
-![edger_hl_kegg2](https://cloud.githubusercontent.com/assets/21265433/25405276/102d1bca-29c0-11e7-87ae-58d4ac806426.png)
+
 Examples:
 
           create_plot(d)
