@@ -17,7 +17,8 @@ Implementation: (Vignettes contains detail information is available), quick impl
           a <- list_species()
           a <- list_species("arachis")
 2.	The interested KEGG data, one or multiple genomes, is transferred using grep_datasets using the abbreviations.
-b <- grep_datasets(c("adu","aip"))
+          b <- grep_datasets(c("adu","aip"))
+          
 3.	OPTIONAL: If the user has different annotation than this of KEGG database, correction should be applied. The user is free to prepare the correction file using any method. However, the file should be in a format of csv containing two columns without column or row names. The first column is the new IDs and the second column is KEGG IDS.
 *for similarity, we prepared shell script to create such list, the user can apply protein sequence or DNA sequence of the new annotation in fasta file.
 
