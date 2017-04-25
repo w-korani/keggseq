@@ -45,6 +45,7 @@ Note: BLAST+ should be available
 
 Example:
 ./conversion.sh list input.fasta output_list.csv blastp 75 75
+
 Example:
 
           c = corrected_datasets_ids(b,'output_list.csv')
