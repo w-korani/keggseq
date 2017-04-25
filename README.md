@@ -28,9 +28,9 @@ Implementation: (Vignettes contains detail information is available), quick impl
 
 *. List: a file contains the abbreviations of interested genome/genomes, one genome/line:
 Example:
+adu
+aip
 
-          adu
-          aip
 *. input.fasta: the file contains protein or DNA sequence of the new annotation.
 
 *. output_list.csv: the file specify by the user to hold the outputs.
