@@ -31,12 +31,17 @@ Example:
 
           adu
           aip
-          input.fasta: the file contains protein or DNA sequence of the new annotation.
-          output_list.csv: the file specify by the user to hold the outputs.
-          Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
-          Note: BLAST+ should be available
-          Ratio: the percentage of query sequence/alignment length
-          Similarity: the percentage of similarity between the query and the hits
+input.fasta: the file contains protein or DNA sequence of the new annotation.
+
+output_list.csv: the file specify by the user to hold the outputs.
+
+Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
+
+Note: BLAST+ should be available
+
+Ratio: the percentage of query sequence/alignment length
+
+Similarity: the percentage of similarity between the query and the hits
 
           Example:
 
