@@ -1,0 +1,16 @@
+Package: keggseq
+Title: KEGG analysis and visualizing of differentially expressed genes
+Version: 0.1
+Authors@R: person("Walid", "Korani", email = "korani@uga.edu",
+                  role = c("aut", "cre"))
+Description: The package do a run time KEGG analysis from the original database,
+    different functions are included to find, grep and combine the interested
+    datasets. It produces the plain text results in addition to graphs which is ready
+    to be published.
+Depends:
+    R (>= 3.2.2)
+License: MIT License
+LazyData: true
+Imports: ggplot2,
+    qvalue
+URL: https://github.com/w-korani/keggseq
