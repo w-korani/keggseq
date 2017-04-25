@@ -1,3 +1,9 @@
 # keggseq:
-R package and Unix shell script for KEGG enrichment analsyis of RNA-seq data
-the package allows combining databases, it is a run time packgage since it retrieves the dataset directly form KEGG databases, it creates graphs which are read to be published with allowing filtering arguments
+The package keggseq was developed to apply KEGG enrichment analysis mainly for ployploids utilizing their sub-genomes. ‘keggseq’ provides some advantages over the available tools:
+1. It allows applying KEGG enrichment analysis for diploids or ployploids with any levels of gene duplications.
+2. It generates ready-to-published graphs.
+3. It produces graphs of interested pathways that have differentially expressed enzymes marked.
+4. It generates csv files containing detailed information of enzymes included in the interested pathways.
+5. It allows correcting genes IDs if the user wants to use annotation different from Kyoto Encyclopedia of Genes and Genomes annotation.
+6. It is a run-time package since the data is downloaded directly from Kyoto Encyclopedia of Genes and Genomes database so it does not require an internal database for specific species.
+7. It is step-by-step and easy to be implemented.
