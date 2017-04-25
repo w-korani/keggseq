@@ -43,15 +43,15 @@ Note: BLAST+ should be available
 
 *. Similarity: the percentage of similarity between the query and the hits
 
-Example:
+  Example:
 
-                    ./conversion.sh list input.fasta output_list.csv blastp 75 75
+                  ./conversion.sh list input.fasta output_list.csv blastp 75 75
 Example:
 
           c = corrected_datasets_ids(b,'output_list.csv')
 4.	Calculating the probabilities of the pathways 
 Example:
-
+          
           d = calculate_kegg(c,edger_de_HL)
 5.	Creating summary of the results:
 Example:
@@ -64,6 +64,7 @@ Examples:
           create_plot(d)
           create_filtered_plot(d, “qvalue","<0.01")
           create_filtered_plot(d,”deg_gene_numbers”,”>10”)
+
 7.	OPTIONAL: createing KEGG pathway graphs or enzyme details.
 Example:
 
