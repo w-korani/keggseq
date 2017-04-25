@@ -28,8 +28,9 @@ Implementation: (Vignettes contains detail information is available), quick impl
 
 List: a file contains the abbreviations of interested genome/genomes, one genome/line:
 Example:
-adu
-aip
+
+          adu
+          aip
 input.fasta: the file contains protein or DNA sequence of the new annotation.
 output_list.csv: the file specify by the user to hold the outputs.
 Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
@@ -37,23 +38,29 @@ Note: BLAST+ should be available
 Ratio: the percentage of query sequence/alignment length
 Similarity: the percentage of similarity between the query and the hits
 
+          Example:
+
+                    ./conversion.sh list input.fasta output_list.csv blastp 75 75
 Example:
-./conversion.sh list input.fasta output_list.csv blastp 75 75
-Example:
-c = corrected_datasets_ids(b,'output_list.csv')
+
+          c = corrected_datasets_ids(b,'output_list.csv')
 4.	Calculating the probabilities of the pathways 
 Example:
-d = calculate_kegg(c,edger_de_HL)
+
+          d = calculate_kegg(c,edger_de_HL)
 5.	Creating summary of the results:
 Example:
-e = kegg_summary(d)
+
+          e = kegg_summary(d)
 
 6.	Creating plots:
 Examples:
-create_plot(d)
-create_filtered_plot(d, “qvalue","<0.01")
-create_filtered_plot(d,”deg_gene_numbers”,”>10”)
+
+          create_plot(d)
+          create_filtered_plot(d, “qvalue","<0.01")
+          create_filtered_plot(d,”deg_gene_numbers”,”>10”)
 7.	OPTIONAL: createing KEGG pathway graphs or enzyme details.
 Example:
-enz = kegg_map_enzymes(c,deg_list,"00480","new_ids.csv",TRUE)
-create_kegg_map(c("adu","aip"),c,deg_list,"00480","new_ids.csv")
+
+          enz = kegg_map_enzymes(c,deg_list,"00480","new_ids.csv",TRUE)
+          create_kegg_map(c("adu","aip"),c,deg_list,"00480","new_ids.csv")
