@@ -42,6 +42,7 @@ Note: BLAST+ should be available
 *. Ratio: the percentage of query sequence/alignment length
 
 *. Similarity: the percentage of similarity between the query and the hits
+
 Example:
 ./conversion.sh list input.fasta output_list.csv blastp 75 75
 Example:
