@@ -53,7 +53,7 @@ Note: BLAST+ should be available
 *. Similarity: the percentage of similarity between the query and the hits
 
 Example:
-./conversion.sh list input.fasta output_list.csv blastp 75 75
+./conversion.sh list input.fasta new_ids.csv blastp 75 75
 
 Example:
 
