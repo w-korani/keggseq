@@ -76,7 +76,7 @@ Examples:
           create_plot(d)
           create_filtered_plot(d, “qvalue","<0.01")
           create_filtered_plot(d,”deg_gene_numbers”,”>10”)
-
+![plot_ex](https://cloud.githubusercontent.com/assets/21265433/25447237/a99af53c-2a71-11e7-82d6-0053fec7c5ee.jpeg)
 7.	OPTIONAL: createing KEGG pathway graphs or enzyme details.
 
 Example:
