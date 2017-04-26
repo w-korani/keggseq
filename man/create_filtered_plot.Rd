@@ -23,7 +23,7 @@ qvalue, the q-values.
 \examples{
 a <- grep_datasets(c("adu","aip"))
 b <- corrected_datasets_ids(a,"new_ids.csv")
-deg_list <- differentially_expressed_gene_list$id
+deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
 pdf("kegg_scatter_output.pdf")
 create_filtered_plot(c,"deg_gene_numbers",">0")
