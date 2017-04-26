@@ -25,7 +25,7 @@ kegg_map_enzymes(dataset,deg_list,map_number,correction_file_name,deg)
 \examples{
 a <- grep_datasets(c("adu","aip"))
 b <- corrected_datasets_ids(a,"new_ids.csv")
-deg_list <- differentially_expressed_gene_list$id
+deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
 create_kegg_map(c("adu","aip"),c,deg_list,"00480","new_ids.csv")
 }
