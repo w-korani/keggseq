@@ -1,8 +1,8 @@
 #'name kegg_summary
 kegg_summary <- function(dataset)
 {
-	library('qvalue')
-	Results = cbind(dataset,qvalue=qvalue(dataset$pvalue)$qvalue)
+	requireNamespace('qvalue')
+	Results = cbind(dataset,qvalue::qvalue=qvalue(dataset$pvalue)$qvalue)
 	Link1 = "http://rest.kegg.jp/list/pathway"
 	Table1 = readLines(Link1)
 	Table2 = t(data.frame(strsplit(Table1,'\t')))
