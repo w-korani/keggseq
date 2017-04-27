@@ -24,5 +24,5 @@ a <- list_species("arachis")
 b <- grep_datasets(c("adu","aip"))
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
-enz = kegg_map_enzymes(c("adu","aip"),c,deg_list,"00480","new_ids.csv",TRUE)
+enz = kegg_map_enzymes(c("adu","aip"),c,deg_list,"00480",TRUE)
 }
