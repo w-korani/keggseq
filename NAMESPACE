@@ -1,1 +1,4 @@
 exportPattern("^[^\\.]")
+importFrom("stats", "p.adjust", "phyper")
+importFrom("utils", "browseURL", "capture.output", "download.file",
+    "read.csv", "write.table")
