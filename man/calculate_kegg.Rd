@@ -23,8 +23,8 @@ column5: adjusted_pvalue, the Bonferroni method adjustment of p-values.\cr
 column6: gene_list, a list of the differentially expressed genes included in the pathway 
 }
 \examples{
-a <- grep_datasets(c("adu","aip"))
-b <- corrected_datasets_ids(a,"new_ids.csv")
+a <- list_species("arachis")
+b <- grep_datasets(c("adu","aip"))
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
 }
