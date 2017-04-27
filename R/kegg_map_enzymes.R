@@ -36,7 +36,7 @@ kegg_map_enzymes <- function (species,dataset,deg_list,map_number,correction_fil
 	}
 	else
 	{
-		cc = read.csv(correction_file_name,head=F)
+		cc = read.csv(correction_file_name,header=F)
 		colnames(cc) = c('new','kegg_genes')
 		Table5b = merge(Table5,cc,by = 'kegg_genes')
 		Table5 = Table5b[,2:3]
