@@ -8,7 +8,6 @@ create_filtered_plot generates a scatter plot of the output of the calculate_keg
 }
 \usage{
 create_filtered_plot(dataset,filter_name,filter_value)
-create_plot(dataset)
 }
 \arguments{
 \item{dataset}{The output dataset of the calculate_kegg function}
