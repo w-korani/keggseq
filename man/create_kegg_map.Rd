@@ -1,5 +1,6 @@
 % File library/man/create_kegg_map.Rd
 \name{create_kegg_map}
+\alias{create_kegg_map}
 \alias{kegg_map_enzymes}
 \title{create_kegg_map}
 \description{
