@@ -1,5 +1,6 @@
 % File library/man/create_plot.Rd
 \name{create_plot}
+\alias{create_plot}
 \alias{create_filtered_plot}
 \title{create_plot}
 \description{
