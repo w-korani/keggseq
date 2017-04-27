@@ -1,5 +1,5 @@
 #'name kegg_map_enzymes
-kegg_map_enzymes <- function (dataset,deg_list,map_number,correction_file_name,deg)
+kegg_map_enzymes <- function (species,dataset,deg_list,map_number,correction_file_name,deg)
 {
 	a1 = formatC(map_number,width = 5, format = "d",flag="0")
 	a2 = paste0("http://www.kegg.jp/kegg-bin/show_pathway?map",a1,"/")
