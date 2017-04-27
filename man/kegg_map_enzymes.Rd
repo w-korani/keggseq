@@ -1,7 +1,6 @@
 % File library/man/kegg_map_enzymes.Rd
 \name{kegg_map_enzymes}
 \alias{kegg_map_enzymes}
-\alias{create_kegg_map}
 \title{kegg_map_enzymes}
 \description{
  kegg_map_enzymes returns a dataset of enzymes included in an interested pathway.
