@@ -14,7 +14,7 @@ the differentially expressed genes that translated in a unque, specific, enzyme 
 }
 \usage{
 create_kegg_map(species,dataset,deg_list,map_number,correction_file_name)
-kegg_map_enzymes(dataset,deg_list,map_number,correction_file_name,deg)
+kegg_map_enzymes(species,dataset,deg_list,map_number,correction_file_name,deg)
 }
 \arguments{
 \item{species}{A list of abbreviations of the intersested species.}
