@@ -1,6 +1,6 @@
 % File library/man/create_kegg_map.Rd
 \name{create_kegg_map}
-\alias{create_kegg_map}
+\alias{kegg_map_enzymes}
 \title{create_kegg_map}
 \description{
 create_kegg_map generates kegg_map with highlighted DEGs for an interested pathway.\cr
@@ -21,6 +21,7 @@ kegg_map_enzymes(dataset,deg_list,map_number,correction_file_name,deg)
 \item{deg_list}{A list containing the differentially expressed genes.}
 \item{map_number}{A string of the interested map number.}
 \item{correction_file_name}{An optional filed, a string to file name, and path, of the dataset_alternate_file in case of using corrected_datasets_ids function.}
+\item{deg}{A logical value can be set to TRUE in case of reurning only enzymes of differentially expressed genes, and FLASE to return all enzymes in the intersetd pathway.}
 }
 \examples{
 a <- grep_datasets(c("adu","aip"))
