@@ -16,6 +16,6 @@ list_species(key_word)
 A data frame of two columns, the first one is the dataset abbreviation and the second is the scientific name of the species.
 }
 \examples{
-a = list_species("arachis")
-a = list_species()
+a <- list_species("arachis")
+a <- list_species()
 }
