@@ -15,5 +15,6 @@ grep_datasets(species)
 A data frame of two columns, the first one is KEGG gene ids and the second one is the map numpers
 }
 \examples{
-a <-  grep_datasets(c("adu","aip"))
+a <- list_species("arachis")
+b <-  grep_datasets(c("adu","aip"))
 }
