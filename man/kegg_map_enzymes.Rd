@@ -20,8 +20,8 @@ kegg_map_enzymes(species,dataset,deg_list,map_number,correction_file_name,deg)
 A data set with three colnames, the first is the enzyme id, the second is the corresponding gene id and the third is the discription of the enzyme.
 }
 \examples{
-a <- grep_datasets(c("adu","aip"))
-b <- corrected_datasets_ids(a,"new_ids.csv")
+a <- list_species("arachis")
+b <- grep_datasets(c("adu","aip"))
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
 enz = kegg_map_enzymes(c("adu","aip"),c,deg_list,"00480","new_ids.csv",TRUE)
