@@ -1,9 +1,10 @@
 #'name create_filtered_plot
 create_filtered_plot <- function(dataset,filter_name,filter_value)
 {
-	library(ggplot2)
-	library('qvalue')
-	qvalue=qvalue(round(dataset$pvalue,digits=5))$qvalue
+	requireNamespace('ggplot2')
+	requireNamespace('qvalue')
+	pathway_description=0
+	qvalue=qvalue::qvalue(round(dataset$pvalue,digits=5))$qvalue
 	Results = cbind(dataset,qvalue=qvalue)
 	Link1 = "http://rest.kegg.jp/list/pathway"
 	Table1 = readLines(Link1)
@@ -18,6 +19,6 @@ create_filtered_plot <- function(dataset,filter_name,filter_value)
 	Table6 = a2
 	
 	Rich_factor = round(Table6$deg_gene_numbers/Table6$background_gene_numbers,digits=2)
-	p <- ggplot(Table6, aes(x = Rich_factor, y = pathway_description))
-	p + geom_point(aes(colour = qvalue,size = deg_gene_numbers))+ scale_colour_gradientn(colours=c("blue","white","red"))
+	p <- ggplot2::ggplot(Table6, ggplot2::aes(x = Rich_factor, y = pathway_description))
+	p + ggplot2::geom_point(ggplot2::aes(colour = qvalue,size = Table6deg_gene_numbers))+ ggplot2::scale_colour_gradientn(colours=c("blue","white","red"))
 }
