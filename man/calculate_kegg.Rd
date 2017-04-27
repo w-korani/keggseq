@@ -1,6 +1,5 @@
 % File kegg/man/calculate_kegg.Rd
 \name{calculate_kegg}
-\alias{calculate_kegg}
 \title{calculate_kegg}
 \description{
 calculate_kegg calculates hypergeometric test pvalues of kegg pathways and their adjusted_pvalue using Bonferroni method.\cr
