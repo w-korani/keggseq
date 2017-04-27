@@ -9,13 +9,11 @@ create_plot generates a scatter plot of the output of the calculate_kegg functio
 create_plot(dataset)
 }
 \arguments{
-\item{dataset}{The output dataset of the calculate_kegg function.}
+\item{dataset}{The output dataset of the calculate_kegg function.}}
 \examples{
 a <- grep_datasets(c("adu","aip"))
 b <- corrected_datasets_ids(a,"new_ids.csv")
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
-pdf("kegg_scatter_output.pdf")
 create_plot(c)
-dev.off()
 }
