@@ -24,8 +24,5 @@ a <- list_species("arachis")
 b <- grep_datasets(c("adu","aip"))
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
-pdf("kegg_scatter_output.pdf")
 create_filtered_plot(c,"deg_gene_numbers",">0")
-create_filtered_plot(c,"qvalue","<0.01")
-dev.off()
 }
