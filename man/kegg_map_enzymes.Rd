@@ -6,10 +6,11 @@
  kegg_map_enzymes returns a dataset of enzymes included in an interested pathway.
 }
 \usage{
-kegg_map_enzymes(dataset,deg_list,map_number,correction_file_name,deg)
-create_kegg_map(dataset,deg_list,map_number,correction_file_name)
+kegg_map_enzymes(species,dataset,deg_list,map_number,correction_file_name,deg)
+create_kegg_map(species,dataset,deg_list,map_number,correction_file_name)
 }
 \arguments{
+\item{species}{A list of abbreviations of the intersested species.}
 \item{dataset}{The output dataset of the calculate_kegg function}
 \item{deg_list}{A list containing the differentially expressed genes.}
 \item{map_number}{A string of the interested map number.}
@@ -24,5 +25,5 @@ a <- grep_datasets(c("adu","aip"))
 b <- corrected_datasets_ids(a,"new_ids.csv")
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
-enz = kegg_map_enzymes(c,deg_list,"00480","new_ids.csv",TRUE)
+enz = kegg_map_enzymes(c("adu","aip"),c,deg_list,"00480","new_ids.csv",TRUE)
 }
