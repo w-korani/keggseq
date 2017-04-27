@@ -7,7 +7,6 @@ The function returns the all currently availabe datasets in the KEGG databse. In
 The searching term is not case sensitive.
 }
 \usage{
-list_species()
 list_species(key_word)
 }
 \arguments{
@@ -18,4 +17,5 @@ A data frame of two columns, the first one is the dataset abbreviation and the s
 }
 \examples{
 list_species("arachis")
+list_species()
 }
