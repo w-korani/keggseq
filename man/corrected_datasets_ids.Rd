@@ -17,5 +17,7 @@ A dataset of the new genes_id in the same format of the input dataset
 }
 \examples{
 a <- grep_datasets(c("adu","aip"))
-b <- corrected_datasets_ids(a,"new_ids.csv")
+path <- system.file(package = "keggseq")
+file <- paste0(path, "/extdata/new_ids.csv")
+b <- corrected_datasets_ids(a,file)
 }
