@@ -20,8 +20,8 @@ qvalue, the q-values.
 \item{filter_value}{A string starts by <,>,==,<= or >= then the values for filtering}
 }
 \examples{
-a <- grep_datasets(c("adu","aip"))
-b <- corrected_datasets_ids(a,"new_ids.csv")
+a <- list_species("arachis")
+b <- grep_datasets(c("adu","aip"))
 deg_list <- as.matrix(b[b$kegg_pathways=='00061',1])[,1]
 c <- calculate_kegg(b,deg_list)
 pdf("kegg_scatter_output.pdf")
