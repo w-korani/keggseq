@@ -8,7 +8,6 @@
 }
 \usage{
 kegg_map_enzymes(species,dataset,deg_list,map_number,correction_file_name,deg)
-create_kegg_map(species,dataset,deg_list,map_number,correction_file_name)
 }
 \arguments{
 \item{species}{A list of abbreviations of the intersested species.}
