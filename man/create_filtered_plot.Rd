@@ -1,7 +1,6 @@
 % File library/man/create_filtered_plot.Rd
 \name{create_filtered_plot}
 \alias{create_filtered_plot}
-\alias{create_plot}
 \title{create_filtered_plot}
 \description{
 create_filtered_plot generates a scatter plot of the output of the calculate_kegg function with passing a specific filter
