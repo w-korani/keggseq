@@ -1,9 +1,10 @@
 #'name create_plot
 create_plot <- function(dataset)
 {
-	library(ggplot2)
-	library('qvalue')
-	qvalue=qvalue(round(dataset$pvalue,digits=5))$qvalue
+	requireNamespace('ggplot2')
+	requireNamespace('qvalue')
+	pathway_description = 0
+	qvalue=qvalue::qvalue(round(dataset$pvalue,digits=5))$qvalue
 	Results = cbind(dataset,qvalue=qvalue)
 	Link1 = "http://rest.kegg.jp/list/pathway"
 	Table1 = readLines(Link1)
@@ -15,6 +16,6 @@ create_plot <- function(dataset)
 	
 Rich_factor = Table6$deg_gene_numbers/Table6$background_gene_numbers
 	Rich_factor = round(Rich_factor ,digits=2)
-	p <- ggplot(Table6, aes(x = Rich_factor, y = pathway_description))
-	p + geom_point(aes(colour = qvalue,size = deg_gene_numbers))+ scale_colour_gradientn(colours=c("blue","white","red"))
+	p <- ggplot2::ggplot(Table6, ggplot2::aes(x = Rich_factor, y = pathway_description))
+	p + ggplot2::geom_point(ggplot2::aes(colour = qvalue,size = Table6$deg_gene_numbers))+ ggplot2::scale_colour_gradientn(colours=c("blue","white","red"))
 }
