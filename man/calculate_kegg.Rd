@@ -7,11 +7,11 @@ calculate_kegg calculates hypergeometric test pvalues of kegg pathways and their
 It takes the input of grep_datasets function or corrected_datasets_ids function as an input
 }
 \usage{
-calculate_kegg(dataset,list)
+calculate_kegg(dataset,deg_list)
 }
 \arguments{
 \item{dataset}{A output dataset of grep_datasets or corrected_datasets_ids.}
-\item{list}{A list containing the differentially expressed genes.}
+\item{deg_list}{A list containing the differentially expressed genes.}
 }
 \value{
 A data frame containg 6 colums as following:\cr
