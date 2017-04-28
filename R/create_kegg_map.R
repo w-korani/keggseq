@@ -42,7 +42,7 @@ create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file
     {
     Table6 = rbind(Table6,Table5[as.character(Table5$kegg_genes) == b5[x],])
     }
-    }	
+    }
     a3 = ""
     for (i in 1:dim(Table6)[1])
     {
