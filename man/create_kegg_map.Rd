@@ -21,6 +21,7 @@ create_kegg_map(species,dataset,deg_list,map_number,correction_file_name)
 \item{map_number}{A string of the interested map number.}
 \item{correction_file_name}{An optional filed, a string to file name, and path, of the dataset_alternate_file in case of using corrected_datasets_ids function.}
 }
+\value{returns pathway graph and open the pathway webpage.}
 \examples{
 a <- list_species("arachis")
 b <- grep_datasets(c("adu","aip"))
