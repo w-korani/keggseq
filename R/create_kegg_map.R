@@ -69,6 +69,6 @@ create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file
 	a8 = paste0("http://www.kegg.jp/tmp/mark_pathway",a7,"/map",a1,".png")
 	download.file(a8,destfile=paste0(a1,".png"),mode ='wb')
 	browseURL(a4)
-	write.table(Table5,paste0(a1,"_enzymes.csv"),row.names = F,sep=",")
-	write.table(Table6,paste0(a1,"_de_enzymes.csv"),row.names = F,sep=",")
+	write.table(Table5,paste0(a1,"_enzymes.csv"),row.names = FALSE,sep=",")
+	write.table(Table6,paste0(a1,"_de_enzymes.csv"),row.names = FALSE,sep=",")
 }
