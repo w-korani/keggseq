@@ -19,6 +19,7 @@ qvalue, the q-values.
 }
 \item{filter_value}{A string starts by <,>,==,<= or >= then the values for filtering}
 }
+\value{returns a plot.}
 \examples{
 a <- list_species("arachis")
 b <- grep_datasets(c("adu","aip"))
