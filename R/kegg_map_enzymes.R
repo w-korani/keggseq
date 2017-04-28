@@ -3,7 +3,6 @@ kegg_map_enzymes <- function (species,dataset,deg_list,map_number,correction_fil
 {
     a1 = formatC(map_number,width = 5, format = "d",flag="0")
     a2 = paste0("http://www.kegg.jp/kegg-bin/show_pathway?map",a1,"/")
-
     b1 = dataset[dataset$map_numbers==a1,6]
     b2 = strsplit(b1,", ")
     b3 = as.matrix(b2[[1]])
