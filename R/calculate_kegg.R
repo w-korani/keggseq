@@ -51,7 +51,7 @@ calculate_kegg <- function(dataset,deg_list)
     Results[x2,4] = phyper(Results[x2,3]-1,n,N-n,Results[x2,2],lower.tail=FALSE)
     Results[x2,5] = p.adjust(Results[x2,4], method = "bonferroni")
     d3 = d3[-1]
-    Results[x2,6] = capture.output(cat(paste0(d3,",")))	
+    Results[x2,6] = capture.output(cat(paste0(d3,",")))
     colnames(Results) = c("map_numbers","background_gene_numbers",  "deg_gene_numbers","pvalue","adjusted_pvalue","gene_list")
     padj = p.adjust(Results[,4], method = "bonferroni")
     Results$adjusted_pvalue = padj
