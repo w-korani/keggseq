@@ -37,7 +37,8 @@ calculate_kegg <- function(dataset,deg_list)
     Results[x2,2] = x1
     d3 = d3[-1]
     Results[x2,3] = length(intersect(d3,deg_list))
-    Results[x2,4] = phyper(Results[x2,3]-1,n,N-n,Results[x2,2],lower.tail=FALSE)
+    Results[x2,4] = phyper(Results[x2,3]-1,n,N-n,Results[x2,2],
+    lower.tail=FALSE)
     Results[x2,5] = p.adjust(Results[x2,4], method = "bonferroni")
     Results[x2,6] = capture.output(cat(paste0(d3,",")))
     d3 =""
@@ -48,11 +49,13 @@ calculate_kegg <- function(dataset,deg_list)
     Results[x2,1] = Table4[i,2]
     Results[x2,2] = x1-1
     Results[x2,3] = length(intersect(d3,deg_list))
-    Results[x2,4] = phyper(Results[x2,3]-1,n,N-n,Results[x2,2],lower.tail=FALSE)
+    Results[x2,4] = phyper(Results[x2,3]-1,n,N-n,Results[x2,2],
+    lower.tail=FALSE)
     Results[x2,5] = p.adjust(Results[x2,4], method = "bonferroni")
     d3 = d3[-1]
     Results[x2,6] = capture.output(cat(paste0(d3,",")))
-    colnames(Results) = c("map_numbers","background_gene_numbers",  "deg_gene_numbers","pvalue","adjusted_pvalue","gene_list")
+    colnames(Results) = c("map_numbers","background_gene_numbers",
+    "deg_gene_numbers","pvalue","adjusted_pvalue","gene_list")
     padj = p.adjust(Results[,4], method = "bonferroni")
     Results$adjusted_pvalue = padj
     return(Results)
