@@ -8,7 +8,8 @@ grep_datasets <- function(species)
     Link1 = paste0(link1,species[i])
     Table1 = readLines(Link1)
     Table2 = t(data.frame(strsplit(Table1,'\t')))
-    Table3 = cbind(kegg_genes = as.character(Table2[,1]),kegg_pathways = as.character(Table2[,2]))
+    Table3 = cbind(kegg_genes = as.character(Table2[,1]),
+    kegg_pathways = as.character(Table2[,2]))
     Table4 = rbind(Table4,Table3)
     }
     Table4[,2] = gsub('\\w\\w\\w\\w:\\w*[^0123456789]','',Table4[,2])
