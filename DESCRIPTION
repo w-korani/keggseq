@@ -17,4 +17,4 @@ Imports: ggplot2,
     stats,
     utils
 URL: https://github.com/w-korani/keggseq
-biocViews: WorkflowStep
+biocViews: Pathways, KEGG
