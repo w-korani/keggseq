@@ -2,7 +2,7 @@
 calculate_kegg <- function(dataset,deg_list)
 {
     Table4 = dataset[order(dataset$kegg_pathways),]
-    kegg_uniq_genes = unique(Table4[,1])		
+    kegg_uniq_genes = unique(Table4[,1])
     kegg_uniq_pathways = unique(Table4[,2]) 
     N = length(kegg_uniq_genes)
     n = length(intersect(kegg_uniq_genes,deg_list))
@@ -52,9 +52,8 @@ calculate_kegg <- function(dataset,deg_list)
     Results[x2,5] = p.adjust(Results[x2,4], method = "bonferroni")
     d3 = d3[-1]
     Results[x2,6] = capture.output(cat(paste0(d3,",")))	
-    colnames(Results) = c("map_numbers","background_gene_numbers",
-			  "deg_gene_numbers","pvalue","adjusted_pvalue","gene_list")
+    colnames(Results) = c("map_numbers","background_gene_numbers",  "deg_gene_numbers","pvalue","adjusted_pvalue","gene_list")
     padj = p.adjust(Results[,4], method = "bonferroni")
-    Results$adjusted_pvalue = padj	
+    Results$adjusted_pvalue = padj
     return(Results)
 }
