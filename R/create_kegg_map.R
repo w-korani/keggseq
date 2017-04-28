@@ -1,8 +1,10 @@
 #'name create_kegg_map
-create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file_name)
+create_kegg_map <- function (species,dataset,deg_list,map_number,
+    correction_file_name)
 {
     a1 = formatC(map_number,width = 5, format = "d",flag="0")
-    a2 = paste0("http://www.kegg.jp/kegg-bin/show_pathway?map",a1,"/")
+    a2 = paste0("http://www.kegg.jp/kegg-bin/show_pathway?map",
+    a1,"/")
     b1 = dataset[dataset$map_numbers==a1,6]
     b2 = strsplit(b1,", ")
     b3 = as.matrix(b2[[1]])
@@ -15,7 +17,8 @@ create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file
     Link1 = paste0(link1,species[i],"/enzyme")
     Table1 = readLines(Link1)
     Table2 = t(data.frame(strsplit(Table1,'\t')))
-    Table3 = cbind(kegg_enzymes = as.character(Table2[,1]),kegg_genes = as.character(Table2[,2]))
+    Table3 = cbind(kegg_enzymes = as.character(Table2[,1]),
+    kegg_genes = as.character(Table2[,2]))
     Table5 = rbind(Table5,Table3)
     }
     kegg_enzymes = as.matrix(unique(Table5[,1]))
@@ -48,11 +51,13 @@ create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file
     {
     if (length(uniq_list[uniq_list == Table6$kegg_enzymes[i]]) > 0)
     {
-    a3 = paste0(a3,gsub('\\w*:','',as.character(Table6$kegg_enzymes[i])),"%09yellow/")
+    a3 = paste0(a3,gsub('\\w*:','',as.character(Table6$kegg_enzymes[i]))
+    ,"%09yellow/")
     }
     if (length(not_uniq_list[not_uniq_list == Table6$kegg_enzymes[i]]) > 0)
     {
-    a3 = paste0(a3,gsub('\\w*:','',as.character(Table6$kegg_enzymes[i])),"%09grey/")
+    a3 = paste0(a3,gsub('\\w*:','',as.character(Table6$kegg_enzymes[i])),
+    "%09grey/")
     }
     }
     a4 = paste0(a2,a3)
