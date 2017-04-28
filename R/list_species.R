@@ -9,6 +9,6 @@ list_species <- function(key_word)
 	{return(Table3)}
 	else
 	{
-	return(Table3[grep(key_word,Table3[,2],ignore.case=T),])
+	return(Table3[grep(key_word,Table3[,2],ignore.case=TRUE),])
 	}
 }
