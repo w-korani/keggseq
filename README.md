@@ -84,3 +84,5 @@ Example:
 
           enz = kegg_map_enzymes(c,deg_list,"00480","new_ids.csv",TRUE)
           create_kegg_map(c("adu","aip"),c,deg_list,"00480","new_ids.csv")
+
+![00061](https://cloud.githubusercontent.com/assets/21265433/25533117/d087af1a-2bec-11e7-9257-7452902c9111.jpg)
