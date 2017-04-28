@@ -36,7 +36,7 @@ create_kegg_map <- function (species,dataset,deg_list,map_number,correction_file
 	}
 	else
 	{
-		cc = read.csv(correction_file_name,header=F)
+		cc = read.csv(correction_file_name,header=FALSE)
 		colnames(cc) = c('new','kegg_genes')
 		Table5b = merge(Table5,cc,by = 'kegg_genes')
 		Table5 = Table5b[,2:3]
