@@ -54,6 +54,6 @@ kegg_map_enzymes <- function (species,dataset,deg_list,map_number,correction_fil
 	{return (merge(Table6,Table3b,by="kegg_enzymes"))}
 	else if (deg == FALSE)
 	{return (merge(Table5,Table3b,by="kegg_enzymes"))}
-	write.table(Table5,paste0(a1,"_enzymes.csv"),row.names = F,sep=",")
-	write.table(Table6,paste0(a1,"_de_enzymes.csv"),row.names = F,sep=",")
+	write.table(Table5,paste0(a1,"_enzymes.csv"),row.names = FASLE,sep=",")
+	write.table(Table6,paste0(a1,"_de_enzymes.csv"),row.names = FALSE,sep=",")
 }
