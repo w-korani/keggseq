@@ -10,6 +10,7 @@ create_plot(dataset)
 }
 \arguments{
 \item{dataset}{The output dataset of the calculate_kegg function.}}
+\value{returns a plot.}
 \examples{
 a <- list_species("arachis")
 b <- grep_datasets(c("adu","aip"))
