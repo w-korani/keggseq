@@ -9,8 +9,12 @@ corrected_datasets_ids corrects genes_id to a different id set
 corrected_datasets_ids(dataset_orginal,dataset_alternate_file)
 }
 \arguments{
-\item{dataset_orginal}{A dataset containing kegg genes_id, the output of grep_datasets function.}
-\item{dataset_alternate_file}{A string for the name, and path, of a csv file contiaing the new genes_id in the same format of the dataset, the first one is the new gene ids and the second one is the map numpers.}
+\item{dataset_orginal}{A dataset containing kegg genes_id, 
+    the output of grep_datasets function.}
+\item{dataset_alternate_file}{A string for the name, and path, 
+    of a csv file contiaing the new genes_id in the same 
+    format of the dataset, the first one is the new gene 
+    ids and the second one is the map numpers.}
 }
 \value{
 A dataset of the new genes_id in the same format of the input dataset
