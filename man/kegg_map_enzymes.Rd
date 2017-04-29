@@ -3,8 +3,7 @@
 \alias{kegg_map_enzymes}
 \title{kegg_map_enzymes}
 \description{
-kegg_map_enzymes returns a dataset of enzymes included 
-    in an interested pathway.
+kegg_map_enzymes returns a dataset of enzymes of interested pathway.
 }
 \usage{
 kegg_map_enzymes(species,dataset,deg_list,
@@ -24,9 +23,9 @@ kegg_map_enzymes(species,dataset,deg_list,
     of the dataset_alternate_file in case of using 
     corrected_datasets_ids function.}
 \item{deg}{
-    A logical value can be set to TRUE in case of reurning 
+    A logical value can be set to true in case of reurning 
     only enzymes of differentially expressed genes, 
-    and FLASE to return all enzymes in the intersetd pathway.}
+    and false to return all enzymes in the intersetd pathway.}
 }
 \value{
 A data set with three colnames, the first is the enzyme id, 
