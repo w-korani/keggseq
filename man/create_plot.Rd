@@ -10,7 +10,8 @@ create_plot generates a scatter plot of
 create_plot(dataset)
 }
 \arguments{
-\item{dataset}{The output dataset of the calculate_kegg function.}}
+\item{dataset}{
+    The output dataset of the calculate_kegg function.}}
 \value{returns a plot.}
 \examples{
 a <- list_species("arachis")
