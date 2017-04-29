@@ -16,7 +16,8 @@ The package 'keggseq' was developed to apply KEGG enrichment
     it does not require an internal database for specific species.
 7. It is step-by-step and easy to be implemented.
 
-Citation: The publication will be published soon
+Citation 
+    The publication will be published soon
 
 Installation:
 
@@ -41,29 +42,29 @@ Example:
           
 3.	OPTIONAL: If the user has different annotation than this of KEGG database, correction should be applied. The user is free to prepare the correction file using any method. However, the file should be in a format of csv containing two columns without column or row names. The first column is the new IDs and the second column is KEGG IDS.
           
-* for similarity, we prepared a shell script to create such list, the user can apply protein sequence or DNA sequence of the new annotation in fasta file.
+for similarity, we prepared a shell script to create such list, the user can apply protein sequence or DNA sequence of the new annotation in fasta file.
 
-./conversion.sh input_list input.fasta output_list.csv blast_type ratio similarity
+conversion.sh input_list input.fasta output_list.csv blast_type ratio similarity
 
-*. List: a file contains the abbreviations of interested genome/genomes, one genome/line:
+List: a file contains the abbreviations of interested genome/genomes, one genome/line:
 Example:
 adu
 aip
 
-*. input.fasta: the file contains protein or DNA sequence of the new annotation.
+input.fasta: the file contains protein or DNA sequence of the new annotation.
 
-*. output_list.csv: the file specify by the user to hold the outputs.
+output_list.csv: the file specify by the user to hold the outputs.
 
-*. Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
+Blast_type: the user should choose of of blast algorithms, i.e., blastp, blastx, blastn, tblastn.
 
 Note: BLAST+ should be available
 
-*. Ratio: the percentage of query sequence/alignment length
+Ratio: the percentage of query sequence/alignment length
 
-*. Similarity: the percentage of similarity between the query and the hits
+Similarity: the percentage of similarity between the query and the hits
 
 Example:
-./conversion.sh list input.fasta new_ids.csv blastp 75 75
+conversion.sh list input.fasta new_ids.csv blastp 75 75
 
 Example:
 
@@ -73,13 +74,13 @@ Example:
 Example:
           
     d = calculate_kegg(c,edger_de_HL)
-5.	Creating summary of the results:
+5.	Creating summary of the results
 
 Example:
 
     e = kegg_summary(d)
 
-6.	Creating plots:
+6.	Creating plots
 
 Examples:
 
