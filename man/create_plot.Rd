@@ -3,7 +3,8 @@
 \alias{create_plot}
 \title{create_plot}
 \description{
-create_plot generates a scatter plot of the output of the calculate_kegg function
+create_plot generates a scatter plot of 
+    the output of the calculate_kegg function
 }
 \usage{
 create_plot(dataset)
