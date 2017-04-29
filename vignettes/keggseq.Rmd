@@ -20,4 +20,4 @@ Citation: The publication will be published soon
 
 Installation:
 
-          devtools::install_github("w-korani/keggseq")
+    devtools::install_github("w-korani/keggseq")
