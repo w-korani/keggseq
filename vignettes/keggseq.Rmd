@@ -23,6 +23,4 @@ Installation:
 
     devtools::install_github("w-korani/keggseq")
 
-Implementation: (Vignettes contains detail information), quick implantation is writing in the following for simplicity: 
-
-
+keggseq_manual.pdf file contains detail information of function using
