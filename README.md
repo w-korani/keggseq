@@ -15,7 +15,7 @@ Installation:
           devtools::install_github("w-korani/keggseq")
 
 
-Implementation: (Vignettes contains detail information is available), quick implantation is writing in the following for simplicity: 
+Implementation: (Vignettes contains detail information), quick implantation is writing in the following for simplicity: 
 
 1.	The available species in KEGG data base can be viewed using the function list_species(), the function shows the available genomes and the abbreviations. The function allow also passing searching keywords
 
