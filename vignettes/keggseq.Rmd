@@ -5,14 +5,20 @@ The package keggseq was developed to apply KEGG enrichment analysis
     
 It allows applying KEGG enrichment analysis for diploids 
     or ployploids with any levels of gene duplications
+    
 It generates ready-to-published graphs
+
 It produces graphs of interested pathways that have 
     differentially expressed enzymes marked
+
 It generates csv files containing detailed information of 
     enzymes included in the interested pathways
+
 It allows correcting genes IDs if the user wants to use annotation 
     different from Kyoto Encyclopedia of Genes and Genomes annotation
+
 It is a run-time package since the data is downloaded directly from 
     Kyoto Encyclopedia of Genes and Genomes database so 
     it does not require an internal database for specific species
+
 It is step-by-step and easy to be implemented
