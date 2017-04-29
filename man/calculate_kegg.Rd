@@ -27,7 +27,7 @@ column3: deg_gene_numbers, number of differentially
 column4: pvalue, p-value of the hypergeometric test for the pathway.\cr
 column5: adjusted_pvalue, the Bonferroni method adjustment of p-values.\cr
 column6: gene_list, a list of the differentially 
-     expressed genes included in the pathway 
+    expressed genes included in the pathway 
 }
 \examples{
 a <- list_species("arachis")
