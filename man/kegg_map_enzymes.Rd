@@ -25,7 +25,7 @@ kegg_map_enzymes(species,dataset,deg_list,
 \item{deg}{
     A logical value can be set to true in case of reurning 
     only enzymes of differentially expressed genes, 
-    and false to return all enzymes in the intersetd pathway.}
+    and false to return all enzymes of the intersetd pathway.}
 }
 \value{
 A data set with three colnames, the first is the enzyme id, 
