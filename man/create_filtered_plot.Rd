@@ -11,7 +11,8 @@ create_filtered_plot(dataset,filter_name,filter_value)
 }
 \arguments{
 \item{dataset}{The output dataset of the calculate_kegg function}
-\item{filter_name}{a string of one of the following filters can be used:\cr
+\item{filter_name}{a string of one of the following 
+    filters can be used:\cr
 background_gene_numbers, all genes included in the pathways.\cr
 deg_gene_numbers, the differentially expressed 
     genes included int the pathway.\cr
