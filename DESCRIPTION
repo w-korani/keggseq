@@ -7,10 +7,9 @@ Author: person("Walid", "Korani", email = "korani@uga.edu",
 Maintainer: Walid Korani <korani@uga.edu>
 Description: The package do a run time KEGG analysis from 
     the original database,different functions are included 
-    to find, grep and combine the interested
+    to find, grep and combine the interested 
     datasets. It produces the plain text results 
-    in addition to graphs which is ready
-    to be published.
+    in addition to graphs which is ready to be published.
 Depends:
     R (>= 3.2.1)
 License: MIT + file LICENSE
