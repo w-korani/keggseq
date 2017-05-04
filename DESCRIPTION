@@ -11,7 +11,7 @@ Description: The package do a run time KEGG analysis from
     datasets. It produces the plain text results 
     in addition to graphs which is ready to be published.
 Depends:
-    R (>= 3.3.1)
+    R (>= 3.4.0)
 License: MIT + file LICENSE
 LazyData: true
 Imports: ggplot2,
