@@ -20,3 +20,4 @@ Imports: ggplot2,
     utils
 URL: https://github.com/w-korani/keggseq
 biocViews: Pathways, KEGG
+VignetteBuilder: knitr
