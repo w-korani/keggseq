@@ -17,7 +17,8 @@ LazyData: true
 Imports: ggplot2,
     qvalue,
     stats,
-    utils
+    utils,
+    knitr
 URL: https://github.com/w-korani/keggseq
 biocViews: Pathways, KEGG
 VignetteBuilder: knitr
