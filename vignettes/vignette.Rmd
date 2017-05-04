@@ -1,3 +1,4 @@
+%\VignetteEngine{knitr::knitr}
 # keggseq:
 The package 'keggseq' was developed to apply KEGG enrichment 
     analysis mainly for ployploids utilizing their sub-genomes. 
