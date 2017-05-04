@@ -4,3 +4,4 @@ importFrom("utils", "browseURL", "capture.output", "download.file",
     "read.csv", "write.table")
 importFrom("qvalue","qvalue")
 importFrom("ggplot2","ggplot","aes","geom_point","scale_colour_gradientn")
+import("knitr")
