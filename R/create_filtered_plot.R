@@ -23,6 +23,6 @@ create_filtered_plot <- function(dataset,filter_name,filter_value)
     p <- ggplot2::ggplot(Table6, ggplot2::aes(x = Rich_factor, 
     y = pathway_description))
     p + ggplot2::geom_point(ggplot2::aes(colour = qvalue,size = 
-    Table6$deg_gene_numbers))+ ggplot2::scale_colour_gradientn(
+    deg_gene_numbers))+ ggplot2::scale_colour_gradientn(
     colours=c("blue","white","red"))
 }
