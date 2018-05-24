@@ -8,7 +8,9 @@ The package 'keggseq' was developed to apply KEGG enrichment analysis mainly for
 6. It is a run-time package since the data is downloaded directly from Kyoto Encyclopedia of Genes and Genomes database so it does not require an internal database for specific species.
 7. It is step-by-step and easy to be implemented.
 
-Citation: The publication will be published soon
+Citation: 
+
+          Korani, W.; Chu, Y.; Holbrook, C,; Ozias-Akins, P. (2018). Insight into Genes Regulating Post-harvest Aflatoxin Contamination of Tetraploid Peanut from Transcriptional Profiling. Genetics, 209(1):143-156.
 
 Installation:
 
