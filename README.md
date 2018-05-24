@@ -9,8 +9,7 @@ The package 'keggseq' was developed to apply KEGG enrichment analysis mainly for
 7. It is step-by-step and easy to be implemented.
 
 Citation: 
-
-          Korani, W.; Chu, Y.; Holbrook, C,; Ozias-Akins, P. (2018). Insight into Genes Regulating Post-harvest Aflatoxin Contamination of Tetraploid Peanut from Transcriptional Profiling. Genetics, 209(1):143-156.
+Korani, W.; Chu, Y.; Holbrook, C,; Ozias-Akins, P. (2018). Insight into Genes Regulating Post-harvest Aflatoxin Contamination of Tetraploid Peanut from Transcriptional Profiling. Genetics, 209(1):143-156.
 
 Installation:
 
